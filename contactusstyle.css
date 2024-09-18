@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-image: white; 
+    font-family: 'Roboto', sans-serif;
+}
+
+/*mobile first*/
+
+h1 { font-size: 2rem;}
+#carrousel h1 {
+    padding: 10px 10px;
+    margin: 25px;
+}
+p { font-size: 1rem;}
+
+/*HEADER*/
+
+header {
+    background-color: black;
+
+}
+header .container {
+    max-width: 1400px;
+    margin: auto;
+  
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 10px;   
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+/*MAIN*/
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    margin: 25px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.contact-container { /*this puts the contact us information in a box*/
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 10px; 
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+}
+
+.info-box h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.info-box p { 
+    text-align: left;
+    padding-bottom: 10px;
+}
+.social-box {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 30px;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px; 
+    margin: 25px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+label {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+/*FOOTER*/
+footer {
+    background-color: black;
+    width: 100%;
+    bottom: 0;  
+    
+    
+}
+
+.footer-container {
+    display: flex;
+    color: white ;
+    align-items: flex-end ;
+    justify-content: center;
+    height: 100px;
+}
+
+
+
+@media (min-width:720px) {
+    
+    header nav {
+        flex-direction: row;
+        padding-top: 20px;
+        justify-content: flex-end;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    header {
+        width: 100%;
+    }
+    
+    .info-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+        
+    }
+    .contact-container { /*this puts the contact us information in a box*/
+        padding: 20px 20px; 
+        margin: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        height: 300px; 
+    }
+    .info-box #address {
+        padding-bottom: 25px;
+    } 
+
+   
+}
